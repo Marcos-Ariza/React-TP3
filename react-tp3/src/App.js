@@ -1,22 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+const subjects = [
+  {
+    name: "Matemática",
+    teacher: "lol",
+    marks: [],
+    id: 0,
+  },
+  {
+    name: "Lengua",
+    teacher: "si",
+    marks: [],
+    id: 1,
+  },
+  {
+    name: "Programación II",
+    teacher: "xd",
+    marks: [],
+    id: 2,
+  },
+  {
+    name: "Física",
+    teacher: "nashe",
+    marks: [],
+    id: 4,
+  },
+  {
+    name: "Informática Aplicada II",
+    teacher: "turi ip ip ip",
+    marks: [],
+    id: 5,
+  },
+  {
+    name: "Química",
+    teacher: "wenamechainthesummer",
+    marks: [],
+    id: 6,
+  },
+];
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h3>Materias ciclo lectivo 2023</h3>
+        <ul>
+          {subjects.map((subject) => (
+            <li key={subject.id}>{subject.name}</li>
+          ))}
+        </ul>
       </header>
     </div>
   );
