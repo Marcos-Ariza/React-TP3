@@ -4,6 +4,7 @@ import SubjectList from "./SubjectList";
 import Search from "./search";
 import NotesList from "./cantNotes";
 import MarksProm from "./promedios";
+import SubjectTeacher from "./SubjectTeacher";
 
 const subjects = [
   {
@@ -20,7 +21,7 @@ const subjects = [
   },
   {
     name: "Programación II",
-    teacher: "Héctor y Picoto",
+    teacher: "García y Picoto",
     marks: [2, 3, 2, 2],
     id: 2,
   },
@@ -58,6 +59,8 @@ function App() {
         <NotesList list={subjects} />
         <h3>Materias con promedio +6</h3>
         <MarksProm list={subjects} />
+        <h3>Docente a cargo</h3>
+        <SubjectTeacher list={subjects} />
         <h3>Buscador:</h3>
         <Search onSearch={handleSearch} />
       </header>
