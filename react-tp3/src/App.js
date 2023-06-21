@@ -15,7 +15,7 @@ const subjects = [
   },
   {
     name: "Lengua",
-    teacher: "De Michelle.",
+    teacher: "De Michelle",
     marks: [9, 8, 6],
     id: 1,
   },

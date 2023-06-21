@@ -16,7 +16,6 @@ function SubjectTeacher(props) {
 
   return (
     <div>
-      <h2>Materias por profesor/a</h2>
       <select name="teacher" value={selectedTeacher} onChange={handleTeacherSelect}>
         <option value="">Seleccione un/a docente</option>
         <option value="Repezza">Repezza</option>
